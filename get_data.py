@@ -68,4 +68,5 @@ def main():
 globs = get_cf('globals')
 url, scopes, cats = globs.url, globs.scopes, globs.cats
 
-print(main())
+if __name__ == "__main__":
+    print(main())

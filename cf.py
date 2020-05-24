@@ -12,6 +12,7 @@ def get_cf(cf):
 
 class FilesConfig:
     data = os.path.join(base_dir, 'Datafile')
+    chats = os.path.join(base_dir, 'Chatsfile')
 
 
 class GlobalsConfig:
