@@ -3,13 +3,14 @@ from get_data import get_data
 from cf import get_cf
 from setup_datafiles import setup_datafiles
 
+setup_datafiles()
+
 
 class App:
     data, diff = get_data()
 
     def __init__(self, debug: bool = False, proxy: str = None):
         self.bot = Bot(self._token, debug=debug, proxy=proxy)
-        setup_datafiles()
 
     def send(self):
         self.bot.send_messages(self.data, self.diff)
