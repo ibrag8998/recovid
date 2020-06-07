@@ -7,8 +7,8 @@ from setup_datafiles import setup_datafiles
 class App:
     data, diff = get_data()
 
-    def __init__(self, proxy: str = None):
-        self.bot = Bot(self._token, proxy=proxy)
+    def __init__(self, debug: bool = False, proxy: str = None):
+        self.bot = Bot(self._token, debug=debug, proxy=proxy)
         setup_datafiles()
 
     def send(self):
