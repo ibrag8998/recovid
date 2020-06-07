@@ -9,6 +9,9 @@ added. Telegram: t.me/covid19_rudag_bot.
 Clone this repo, cd, then:
 
 ```
+git clone https://github.com/ibrag8998/recovid.git
+cd recovid
+pip3 install -r requirements.txt
 echo "<your_token_here>" > token
-python src/app.py
+python3 src/app.py
 ```
